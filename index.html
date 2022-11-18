@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <form onsubmit="return false;" class="formulario">
+      <input type="text" placeholder="Producto" id="titulo">
+      <input type="number" placeholder="precio" id="precio">
+      <input type="text" placeholder="url de imagen" id="thumbnail">
+      <button onclick="enviarProducto()">Enviar producto</button>
+    </form>
+    <div id="product-list-div"></div>
+    <form onsubmit="return false;" class="chat">
+      <input type="text"id="emailUser" placeholder="email">
+      <input type="text" id="input-msg" placeholder="mensaje">
+      <button onclick="enviarMsg()">Enviar</button>
+    </form>
+    
+    <div id="msg-list-div"></div>
+  </body>
+</html>
